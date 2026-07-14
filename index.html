@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyond Niche — Our Locations</title>
+<meta name="description" content="Find your nearest Beyond Niche fragrance boutique.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <img src="assets/header-banner.jpg" alt="Beyond Niche — A Fragrance House" class="header-banner">
+</header>
+
+<main>
+  <h1 class="section-title">Our Locations</h1>
+
+  <section class="carousel" aria-roledescription="carousel" aria-label="Shop locations">
+    <button class="arrow arrow-prev" id="prevBtn" aria-label="Previous location">
+      <span class="tri tri-left"></span>
+      <span class="tri tri-left"></span>
+    </button>
+
+    <div class="carousel-frame">
+      <img id="locationPhoto" src="" alt="" class="location-photo">
+    </div>
+
+    <button class="arrow arrow-next" id="nextBtn" aria-label="Next location">
+      <span class="tri tri-right"></span>
+      <span class="tri tri-right"></span>
+    </button>
+  </section>
+
+  <div class="dots" id="dots"></div>
+
+  <button class="location-btn" id="locationBtn" aria-haspopup="dialog">Bawadi Mall</button>
+</main>
+
+<footer class="site-footer">
+  <a href="https://beyondniche.ae" class="footer-link" target="_blank" rel="noopener">beyondniche.ae</a>
+  <div class="social-icons">
+    <a href="https://www.tiktok.com/@beyondniche" target="_blank" rel="noopener" aria-label="Beyond Niche on TikTok">
+      <img src="assets/tiktok-icon.jpg" alt="" width="34" height="34">
+    </a>
+    <a href="https://www.instagram.com/beyondniche" target="_blank" rel="noopener" aria-label="Beyond Niche on Instagram">
+      <img src="assets/instagram-icon.jpg" alt="" width="34" height="34">
+    </a>
+  </div>
+</footer>
+
+<!-- Floor map popup -->
+<div class="modal-overlay" id="mapModal" role="dialog" aria-modal="true" aria-labelledby="modalMallName" aria-hidden="true">
+  <div class="modal-card">
+    <button class="modal-close" id="closeModal" aria-label="Close map">&times;</button>
+    <div class="modal-map-header">
+      <span id="modalMallName">Bawadi Mall</span>
+      <span id="modalGateName">Gate 3</span>
+    </div>
+    <div class="modal-map-frame">
+      <img id="modalMapImg" src="" alt="" class="modal-map-img">
+    </div>
+    <a id="modalDirections" class="directions-btn" href="#" target="_blank" rel="noopener">Get Directions</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
